@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="online-shop_schema" id="9FD0042A-72E8-BAE8-EF13-8397E914FC92" version="3.5">
+<createdBy>siwonp</createdBy>
+<createdTime>2020-08-21 17:39:13 UTC</createdTime>
+<ownerDesignName>online-shop_schema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9FD0042A-72E8-BAE8-EF13-8397E914FC92</designId>
+</OSDM_Design>
