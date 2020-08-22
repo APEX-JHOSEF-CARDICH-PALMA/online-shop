@@ -1,0 +1,28 @@
+{
+  "name": "online-shop",
+  "version": "1.0.0",
+  "description": "This is online shop system devolped by Jhosef Cardich and Paweł Siwoń",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhosefCardich/online-shop.git"
+  },
+  "keywords": [
+    "shop",
+    "online-shop-system"
+  ],
+  "author": "Jhosef Cardich,Paweł Siwoń",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhosefCardich/online-shop/issues"
+  },
+  "homepage": "https://github.com/JhosefCardich/online-shop#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
