@@ -31,7 +31,7 @@ This repository is going to focus on as much utilization of GitHub features as w
 | :----------------------------------------------------: |
 |           _System architecture in overwiev_            |
 
-####Technolgies planned for use
+#### Technolgies planned for use
 
 |         [Node.js](https://nodejs.org/en/)         |          [Angular](https://angular.io/)           |        [MySQL](https://www.mysql.com/)        |
 | :-----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
