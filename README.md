@@ -3,7 +3,6 @@
 
 
 - [Introduction](#Introduction)
-- [Objectives](#Objectives)
 - [Architecture](#Architecture)
 - [Functionality](#Functionality)
 - [Team](#team)
@@ -58,8 +57,13 @@ Application will have definied SMTP server to send account creation confirmation
 
 ## Team
 
-|          | Jhosef Anderson Cardich Palma | Paweł Siwoń                             |
+|          | Jhosef Cardich | Paweł Siwoń                             |
 | -------- | ----------------------------- | --------------------------------------- |
 | Git      | [@JhosefCardich](https://github.com/JhosefCardich)            | [@siwonpawel](https://github.com/siwonpawel)                           |
 | Twitter  | [link](https://twitter.com/jhosefcardich)                              | [link](https://twitter.com/siwonpawel)  |
 | Facebook |                               | [link](https://facebook.com/siwonpawel) |
+
+
+
+
+---
