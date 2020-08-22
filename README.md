@@ -17,15 +17,15 @@ This repository is going to focus on as much utilization of GitHub features as w
 
 ---
 
-| ![alt text](documentation/assets/architecture.png) |
-| :------------------------------------------------: |
-|         _System architecture in overwiev_          |
+| ![architecture](documentation/assets/architecture.png) |
+| :----------------------------------------------------: |
+|           _System architecture in overwiev_            |
 
 **Technolgies planned for use**  
 
-|       [Node.js](https://nodejs.org/en/)       |        [Angular](https://angular.io/)         |       [MySQL](https://www.mysql.com/)       |
-| :-------------------------------------------: | :-------------------------------------------: | :-----------------------------------------: |
-| ![alt text](documentation/assets/node_js.png) | ![alt text](documentation/assets/angular.png) | ![alt text](documentation/assets/mysql.png) |
+|         [Node.js](https://nodejs.org/en/)         |          [Angular](https://angular.io/)           |        [MySQL](https://www.mysql.com/)        |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
+| ![Node.js logo](documentation/assets/node_js.png) | ![Angular logo](documentation/assets/angular.png) | ![MySQL logo](documentation/assets/mysql.png) |
 
 
 
@@ -47,7 +47,8 @@ Application will have definied SMTP server to send account creation confirmation
 
 ## Team
 
-|         | Jhosef Anderson Cardich Palma | Paweł Siwoń |
-| ------- | ----------------------------- | ----------- |
-| Git     | @JhosefCardich                | @siwonpawel |
-| Twitter |                               |             |
+|          | Jhosef Anderson Cardich Palma | Paweł Siwoń                             |
+| -------- | ----------------------------- | --------------------------------------- |
+| Git      | @JhosefCardich                | @siwonpawel                             |
+| Twitter  |                               | [link](https://twitter.com/siwonpawel)  |
+| Facebook |                               | [link](https://facebook.com/siwonpawel) |
