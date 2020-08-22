@@ -32,7 +32,7 @@ This repository is going to focus on as much utilization of GitHub features as w
 |           _System architecture in overwiev_            |
 
 ### Data Base
-| ![Data Base](documentation/assets/mysql-db.jpeg) |
+| ![Data Base](documentation/assets/mysql_db.jpeg) |
 | :----------------------------------------------------: |
 |           _Data Base Schema overview_            |
 #### Technolgies planned for use
