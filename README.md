@@ -34,7 +34,7 @@ This repository is going to focus on as much utilization of GitHub features as w
 ### Data Base
 | ![Data Base](documentation/assets/mysql-db.jpeg) |
 | :----------------------------------------------------: |
-|           _System architecture in overwiev_            |
+|           _Data Base Schema overview_            |
 #### Technolgies planned for use
 
 |         [Node.js](https://nodejs.org/en/)         |          [Angular](https://angular.io/)           |        [MySQL](https://www.mysql.com/)        |
