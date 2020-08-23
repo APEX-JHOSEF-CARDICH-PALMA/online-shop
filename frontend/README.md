@@ -58,10 +58,12 @@ Al the components are located in the directory: ***"src/app/components"*** (It`s
 $ ng g component components/[name-component]
 ```
 In this project the available components are:
+
 . components/admin
 . components/employee
 . components/customer
 . components/login
+. components/newaccount
 
 
 ---
