@@ -1,9 +1,8 @@
 # Creating a new Angular project from the scratch
 
-## 1. Updating Angular
+## Updating Angular
 We have to install all the dependencies before:
 - Node.js
-- Angular
 
 
 ---
@@ -48,6 +47,24 @@ $ ng new
 ```
 $ ng serve
 ```
+
+## Development 
+
+we can create views for our app. Firstly we have to create components. A component is a piece of html view that will be showed in the browser.
+Al the components are located in the directory: ***"src/app/components"*** (It`s a convention to develop an kept the project structure orgnized)
+
+> Creating a component:
+```
+$ ng g component components/[name-component]
+```
+In this project the available components are:
+
+. components/admin
+. components/employee
+. components/customer
+. components/login
+. components/newaccount
+
 
 ---
 
