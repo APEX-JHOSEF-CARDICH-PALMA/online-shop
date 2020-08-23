@@ -11,5 +11,6 @@ export default {
     database: "online_shop",
     charset: "utf8",
   },
+  
   debug: true,
 };
