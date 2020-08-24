@@ -22,3 +22,26 @@ export function findAll(req, res) {
       })
     );
 }
+
+export function findShop(req, res) {
+  Shop.forge({ id: req.params.id })
+    .fetch()
+    .then((shop) => {
+      if (!shop) {
+        res.status(HttpStatus.NOT_FOUND).json({
+          error: true,
+          data: {},
+        });
+      } else {
+        res.json({
+          error: false,
+          data: shop.toJSON(),
+        });
+      }
+    })
+    .catch((err) =>
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        error: err,
+      })
+    );
+}
