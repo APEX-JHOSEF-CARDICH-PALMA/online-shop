@@ -8,5 +8,6 @@ router.route("/:id").get(shopCtrl.findShop);
 router.route("/:id").delete(shopCtrl.deleteShop);
 router.route("/").post(shopCtrl.createShop);
 router.route("/").put(shopCtrl.editShop);
+router.route("/city/:name").get(shopCtrl.findInCity);
 
 export default router;

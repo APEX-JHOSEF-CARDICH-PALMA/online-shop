@@ -106,3 +106,26 @@ export function editShop(req, res) {
       })
     );
 }
+
+export function findInCity(req, res) {
+  Shop.forge({ city: req.params.name })
+    .fetch({ require: false })
+    .then((shop) => {
+      if (shop == null) {
+        res.json({
+          success: true,
+          data: [],
+        });
+      } else {
+        res.json({
+          success: true,
+          data: shop.toJSON(),
+        });
+      }
+    })
+    .catch((err) =>
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        error: err,
+      })
+    );
+}
