@@ -6,5 +6,6 @@ const router = express.Router();
 router.route("/").get(shopCtrl.findAll);
 router.route("/:id").get(shopCtrl.findShop);
 router.route("/:id").delete(shopCtrl.deleteShop);
+router.route("/").post(shopCtrl.createShop);
 
 export default router;

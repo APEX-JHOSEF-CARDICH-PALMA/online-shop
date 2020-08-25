@@ -71,3 +71,20 @@ export function deleteShop(req, res) {
       })
     );
 }
+
+export function createShop(req, res) {
+  const { name, city, postale, street, street_number } = req.body;
+  Shop.forge({ name, city, postale, street, street_number })
+    .save()
+    .then((shop) =>
+      res.json({
+        success: true,
+        data: shop.toJSON(),
+      })
+    )
+    .catch((err) =>
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        error: err,
+      })
+    );
+}
