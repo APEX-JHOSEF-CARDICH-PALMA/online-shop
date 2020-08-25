@@ -7,5 +7,6 @@ router.route("/").get(shopCtrl.findAll);
 router.route("/:id").get(shopCtrl.findShop);
 router.route("/:id").delete(shopCtrl.deleteShop);
 router.route("/").post(shopCtrl.createShop);
+router.route("/").put(shopCtrl.editShop);
 
 export default router;

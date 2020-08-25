@@ -88,3 +88,20 @@ export function createShop(req, res) {
       })
     );
 }
+
+export function editShop(req, res) {
+  const { id, name, city, postale, street, street_number } = req.body;
+  Shop.forge({ id, name, city, postale, street, street_number })
+    .save()
+    .then((shop) =>
+      res.json({
+        success: true,
+        data: shop.toJSON(),
+      })
+    )
+    .catch((err) =>
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        error: err,
+      })
+    );
+}
