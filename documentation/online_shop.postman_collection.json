@@ -289,6 +289,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get by cloth id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}\\api\\shop\\clothing\\1",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"shop",
+								"clothing",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}

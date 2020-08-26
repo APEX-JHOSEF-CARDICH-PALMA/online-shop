@@ -9,5 +9,6 @@ router.route("/:id").delete(shopCtrl.deleteShop);
 router.route("/").post(shopCtrl.createShop);
 router.route("/").put(shopCtrl.editShop);
 router.route("/city/:name").get(shopCtrl.findInCity);
+router.route("/clothing/:clothId").get(shopCtrl.findAllByClothing);
 
 export default router;

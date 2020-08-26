@@ -1,11 +1,11 @@
 import bookshelf from "../config/bookshelf.js";
+import ClothesShop from "./clothes_shop.model.js";
 
-const TABLE_NAME = "shop";
-
-class Shop extends bookshelf.Model {
-  get tableName() {
-    return TABLE_NAME;
-  }
-}
+const Shop = bookshelf.Model.extend({
+  tableName: "shop",
+  clothesShop: function () {
+    return this.hasMany(ClothesShop);
+  },
+});
 
 export default Shop;

@@ -129,3 +129,41 @@ export function findInCity(req, res) {
       })
     );
 }
+
+export function findAllByClothing(req, res) {
+  Shop.forge({
+    id: req.params.clothId,
+  })
+    .fetch({
+      withRelated: ["clothesShop"],
+    })
+    .then((shop) => {
+      if (!shop) {
+        res.status(HttpStatus.NOT_FOUND).json({
+          error: true,
+          data: {},
+        });
+      } else {
+        var models = new Array();
+        for (let i = 0; i < shop.relations.clothesShop.models.length; i++) {
+          if (
+            shop.relations.clothesShop.models[i].attributes.clothes_id ==
+            req.params.clothId
+          ) {
+            shop.relations.clothesShop.models = [];
+            res.json({
+              error: false,
+              data: shop.toJSON(),
+            });
+            break;
+          }
+        }
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
+        error: err,
+      });
+    });
+}
