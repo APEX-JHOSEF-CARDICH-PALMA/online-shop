@@ -1,4 +1,4 @@
-#About
+# About
  This project has the following components:
 
 > components/admin
@@ -7,8 +7,11 @@ Funtionalities:
 - add
 - add
 > components/employee
+
 > components/customer
+
 > components/login
+
 > components/newaccount
 
 --- 
