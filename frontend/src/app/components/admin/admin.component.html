@@ -1,1 +1,12 @@
-<p>admin works!</p>
+
+<div> 
+    <p>admin works!</p>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of admim_user">
+            <h6>Nombre:{{item.nombre}}</h6>
+            <h6>Job Title:{{item.job}}</h6>
+            <h6>Description:{{item.description}}</h6>
+        </li>
+        
+    </ul>
+</div>
