@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 // Services
 import { UserService } from './services/user.service'
 
@@ -21,7 +22,8 @@ import { NewaccountComponent } from './components/newaccount/newaccount.componen
     NewaccountComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [ UserService],
   bootstrap: [AppComponent]
