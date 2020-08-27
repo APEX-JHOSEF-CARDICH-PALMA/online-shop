@@ -1,18 +1,16 @@
 
 <div> 
    
-    <button class="btn btn-primary">hola</button>
+
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let item of admim_user$">
-            <h6>Nombre-local:{{item.nombre}}</h6>
+        <li class="list-group-item" *ngFor="let index of user$">
+            <h1> API DATA</h1>
+            <h6>Name: {{index.name}}</h6>
+            <h6>Surname: {{index.surname}}</h6>
+            <h6>Email: {{index.email}}</h6>
         </li>
     </ul>
 
-    <ul class="list-group">
-        <li class="list-group-item">
-            <h6>{{ user$ }}</h6>
-        </li>
-    </ul>
 
     
 </div>

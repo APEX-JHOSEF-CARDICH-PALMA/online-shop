@@ -24,7 +24,7 @@ getUsers(){
   return this.users;
 }
 getApiUsers(){
-  return this._http.get<any[]>(this.apiUrl);
+  return this._http.get<User>(this.apiUrl);
 
 }
 

@@ -11,7 +11,7 @@ import { User } from 'src/app/models/user.model';
 export class AdminComponent implements OnInit {
 
   admim_user$:any[]=[]; // Here we store all the data from user service.
-  user$:any[]=[];
+  user$:User[]=[];
 
   constructor(private userService: UserService) { 
     this.admim_user$ = userService.getUsers();
@@ -19,8 +19,11 @@ export class AdminComponent implements OnInit {
   }
 
   ngOnInit() {
-    return this.userService.getApiUsers().subscribe((data:any) => {this.user$ = data;
-    console.log(this.user$)});
+    return this.userService.getApiUsers().subscribe((data:any) => {
+    this.user$ = data.data;
+    console.log(this.user$);
+  
+  });
   }
 
 }
