@@ -1,1 +1,16 @@
-<p>admin works!</p>
+
+<div> 
+   
+
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let index of user$">
+            <h1> API DATA</h1>
+            <h6>Name: {{index.name}}</h6>
+            <h6>Surname: {{index.surname}}</h6>
+            <h6>Email: {{index.email}}</h6>
+        </li>
+    </ul>
+
+
+    
+</div>
