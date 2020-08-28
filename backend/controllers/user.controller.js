@@ -13,7 +13,9 @@ export function findAll(req, res) {
 }
 
 export function createUser(req, res) {
-  const { name, surname, email, password, role, shop_id } = req.body;
+  const { name, surname, email, role, shop_id } = req.body;
+  const password = bcrypt.hashSync(req.body.password, 10);
+
   User.forge({ name, surname, email, password, role, shop_id })
     .save()
     .then((user) =>
