@@ -1,5 +1,6 @@
 import HttpStatus from "http-status-code";
 import User from "../models/user.model.js";
+import bcrypt from "bcrypt";
 
 export function findAll(req, res) {
   User.forge()
@@ -13,10 +14,10 @@ export function findAll(req, res) {
 }
 
 export function createUser(req, res) {
-  const { name, surname, email, role, shop_id } = req.body;
+  const { name, surname, email, role_id, shop_id } = req.body;
   const password = bcrypt.hashSync(req.body.password, 10);
 
-  User.forge({ name, surname, email, password, role, shop_id })
+  User.forge({ name, surname, email, password, role_id, shop_id })
     .save()
     .then((user) =>
       res.json({

@@ -3,13 +3,8 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import User from "../models/user.model.js";
 
-/**
- * Returns jwt token if valid email and password is provided
- *
- * @param {object} req
- * @param {object} res
- * @returns {*}
- */
+const tokenSecret = "very_strong_token_SECRET";
+
 export function login(req, res) {
   const { email, password } = req.body;
   User.query({
@@ -24,7 +19,7 @@ export function login(req, res) {
               id: user.get("id"),
               email: user.get("email"),
             },
-            process.env.TOKEN_SECRET_KEY
+            tokenSecret
           );
 
           res.json({

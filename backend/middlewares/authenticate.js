@@ -2,6 +2,8 @@ import HttpStatus from "http-status-codes";
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
+const tokenSecret = "very_strong_token_SECRET";
+
 export default (req, res, next) => {
   const authorizationHeader = req.headers["authorization"];
   let token;
@@ -11,7 +13,7 @@ export default (req, res, next) => {
   }
 
   if (token) {
-    jwt.verify(token, process.env.TOKEN_SECRET_KEY, (err, decoded) => {
+    jwt.verify(token, tokenSecret, (err, decoded) => {
       if (err) {
         res
           .status(HttpStatus.UNAUTHORIZED)
