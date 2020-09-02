@@ -1,16 +1,47 @@
+<hr size="2px" color="black" />
+<h2>Admin Panel</h2>
+<hr size="1px" color="black" />
 
-<div> 
-   
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add an User to the System</h5>
+          <p class="card-text">In here, you can add an employee to create its credentials</p>
+          <a href="#" class="btn btn-primary">Add User</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Remove an User from the System</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Remove User</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <ul class="list-group">
-        <li class="list-group-item" *ngFor="let index of user$">
-            <h1> API DATA</h1>
-            <h6>Name: {{index.name}}</h6>
-            <h6>Surname: {{index.surname}}</h6>
-            <h6>Email: {{index.email}}</h6>
-        </li>
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Edit an User's Information</h5>
+          <p class="card-text">Edit Information of a user</p>
+          <a href="#" class="btn btn-primary">Edit User</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">List all the Users in the System</h5>
+          <p class="card-text">See all the registered users in the System.</p>
+          <a href="#" class="btn btn-primary">List Users</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-    
-</div>
+<app-list-user></app-list-user>

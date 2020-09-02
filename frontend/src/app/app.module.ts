@@ -13,6 +13,13 @@ import { EmployeeComponent } from './components/employee/employee.component';
 import { LoginComponent } from './components/login/login.component';
 import { NewaccountComponent } from './components/newaccount/newaccount.component';
 import { WellcomeComponent } from './components/wellcome/wellcome.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
+import { RemoveUserComponent } from './components/remove-user/remove-user.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { ListUserComponent } from './components/list-user/list-user.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ErrorComponent } from './components/error/error.component';
 
 
 const routes: Routes = [ 
@@ -26,6 +33,8 @@ const routes: Routes = [
   path:'admin',
   component: AdminComponent
 },
+
+
 {
   path:'customer',
   component:CustomerComponent
@@ -58,7 +67,14 @@ const routes: Routes = [
     EmployeeComponent,
     LoginComponent,
     NewaccountComponent,
-    WellcomeComponent
+    WellcomeComponent,
+    AddUserComponent,
+    RemoveUserComponent,
+    EditUserComponent,
+    ListUserComponent,
+    HeaderComponent,
+    FooterComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

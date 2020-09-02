@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // Services
 import { UserService } from '../../services/user.service';
+//Models
 import { User } from 'src/app/models/user.model';
 
 @Component({
@@ -19,11 +20,6 @@ export class AdminComponent implements OnInit {
   }
 
   ngOnInit() {
-    return this.userService.getApiUsers().subscribe((data:any) => {
-    this.user$ = data.data;
-    console.log(this.user$);
-  
-  });
   }
 
 }
