@@ -1,4 +1,9 @@
-<h3> List of the Users in the System</h3>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/admin">Admin Panel</a></li>
+      <li class="breadcrumb-item active" aria-current="page"> List Users</li>
+    </ol>
+  </nav>
 <div> 
     <ul class="list-group">
         <li class="list-group-item" *ngFor="let index of user$">

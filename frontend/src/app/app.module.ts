@@ -20,6 +20,7 @@ import { ListUserComponent } from './components/list-user/list-user.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ErrorComponent } from './components/error/error.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 
 
 const routes: Routes = [ 
@@ -31,7 +32,36 @@ const routes: Routes = [
 },
 {
   path:'admin',
-  component: AdminComponent
+  component: AdminComponent,
+  children: [
+        {
+          path: '',
+          pathMatch:'prefix',
+          redirectTo:'panel'
+        },
+        {
+          path: 'panel',
+          component: AdminPanelComponent
+        },
+        {
+          path: 'add',
+          pathMatch:'full',
+          component: AddUserComponent
+        },
+        {
+          path: 'remove',
+          component: RemoveUserComponent
+        },
+        {
+          path: 'list',
+          component: ListUserComponent
+        },
+        {
+          path: 'edit',
+          component: EditUserComponent
+        }
+        
+  ]
 },
 
 
@@ -74,7 +104,8 @@ const routes: Routes = [
     ListUserComponent,
     HeaderComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    AdminPanelComponent
   ],
   imports: [
     BrowserModule,
